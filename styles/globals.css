@@ -1,0 +1,26 @@
+:root{
+  --body-bg: black;
+  --body-color: whitesmoke;
+  --rel-bg: #2b2b2b;
+  --rel-color: whitesmoke;
+  --btn-bg: rgba(0, 0, 0, 0.747);
+}
+
+.lightMode:root{
+  --body-bg: whitesmoke;
+  --body-color: #1b1b1b;
+  --rel-bg: #dadada;
+  --rel-color: #1b1b1b;
+  --btn-bg: rgba(0, 0, 0, 0.747);
+}
+
+html,
+body {
+  overflow: hidden;
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  font-family: 'Thasadith', sans-serif;
+  margin: 0;
+}
+
+
