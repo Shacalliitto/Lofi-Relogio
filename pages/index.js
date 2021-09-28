@@ -26,30 +26,25 @@ export default function Home() {
   var weekDay = ["Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sabado"]
   var months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 
-  function setLightMode(){
-    document.querySelector('html').classList.add("lightMode")
-  }
-
-  function setDarkMode(){
+  function changeMode(){
+    var checkbox = event.target
+    if(checkbox.checked) return document.querySelector('html').classList.add("lightMode")
     document.querySelector('html').classList.remove("lightMode")
   }
 
   return (
     <>
     <div className={styles.luz}>
-      <button className={styles.btn} onClick={setLightMode}><Image src={Sol} alt={"Botão de Ligh mode"} className={styles.img}/></button>
-      <button className={styles.btn} onClick={setDarkMode}><Image src={Lua} alt={"Botão de Dark mode"} className={styles.img}/></button>
-    </div>
-    <div>
-    
+      <input type="checkbox" className={styles.checkbox} onChange={changeMode}></input>
+      <iframe className={styles.lofi} src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1&rel=0" frameBorder="0"></iframe>
     </div>
     <div className={styles.clock}>
       <h1>Lofi Clock</h1>
-      <iframe className={styles.lofi} src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1&rel=0" frameBorder="0"></iframe>
-      <input type="text" id="rel" className={styles.hora}/>
-      <h2>{weekDay[now.getDay()]}, {now.getDate()} de {months[now.getMonth()]} de {now.getFullYear()}</h2>
+      <div className={styles.content}>
+        <input type="text" id="rel" className={styles.hora}/>
+        <h2 className={styles.date}>{weekDay[now.getDay()]}, {now.getDate()} de {months[now.getMonth()]} de {now.getFullYear()}</h2>
+      </div>
     </div>
-    
     </>
   )
 }
