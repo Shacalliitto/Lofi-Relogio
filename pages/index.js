@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Sol from '../public/imgs/sol.png'
-import Lua from '../public/imgs/lua.png'
 import { func } from 'prop-types'
+import Link from 'next/link'
 
 export default function Home() {
   function relogio(){
@@ -35,6 +34,7 @@ export default function Home() {
   return (
     <>
     <div className={styles.luz}>
+      <Link href="/chroma" className={styles.chroma}>Chroma mode</Link>
       <input type="checkbox" className={styles.checkbox} onChange={changeMode}></input>
       <iframe className={styles.lofi} src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1&rel=0" frameBorder="0"></iframe>
     </div>

@@ -26,4 +26,22 @@ body {
   transition: .5s;
 }
 
+/* unvisited link */
+a:link {
+  color: var(--body-color);
+}
 
+/* visited link */
+a:visited {
+  color: var(--body-color);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--body-color);
+}
+
+/* selected link */
+a:active {
+  color: var(--body-color);
+}

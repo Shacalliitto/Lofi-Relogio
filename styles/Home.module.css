@@ -7,6 +7,18 @@
   position: absolute;
   right: 0;
   margin: 1%;
+  opacity: 3%;
+  transition: .5s;
+}
+
+.luz:hover{
+  opacity: 50%;
+}
+
+.chroma{
+  font-size: 1.0em;
+  text-decoration: none;
+  margin: 0.5em; 
 }
 
 .content{
@@ -65,6 +77,10 @@
   transition: .5s;
 }
 
+.checkbox:hover{
+  cursor: pointer;
+}
+
 .checkbox:checked{
   background: rgb(175, 0, 0);
 }
@@ -87,10 +103,22 @@
   left: 40px; 
 }
 
-/* .content{ */
-  /* // copiar os códigos do relógio //
-  // criar uma div para unir relógio e data //
-  // colocar o embed do yt na div do botão //
-  // tirar a borda de tudo //
-  // colocar border-radius no embed // */
-/* }  */
+/* unvisited link */
+.chroma:link {
+  color: var(--body-color);
+}
+
+/* visited link */
+.chroma:visited {
+  color: var(--body-color);
+}
+
+/* mouse over link */
+.chroma:hover {
+  color: var(--body-color);
+}
+
+/* selected link */
+.chroma:active {
+  color: var(--body-color);
+}
