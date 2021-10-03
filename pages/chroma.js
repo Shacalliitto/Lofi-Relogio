@@ -1,4 +1,3 @@
-import '../styles/chroma.module.css'
 import styles from '../styles/chroma.module.css'
 import Link from 'next/link'
 
@@ -27,7 +26,7 @@ export default function chroma(){
         <>
         <div className={styles.bgGradiente}>
             <div className={styles.luz}>
-                <Link href="/" className={styles.home}> Home Page </Link>
+                <Link href="/" ><p className={styles.home}>Home Page</p></Link>
                 <iframe className={styles.lofi} src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1&rel=0" frameBorder="0"></iframe>
             </div>
             <div className={styles.clock}>

@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
     <div className={styles.luz}>
-      <Link href="/chroma" className={styles.chroma}>Chroma mode</Link>
+      <Link href="/chroma"><p className={styles.chroma}>Chroma mode</p></Link>
       <input type="checkbox" className={styles.checkbox} onChange={changeMode}></input>
       <iframe className={styles.lofi} src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1&rel=0" frameBorder="0"></iframe>
     </div>

@@ -34,8 +34,8 @@
 }
 
 .home{
-    font-size: 1.0em;
-    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    margin-bottom: 1vh;
     text-decoration: none;
 }
   
@@ -78,6 +78,7 @@
     width:28vw;
     height:12vh;
     border-radius: 120px;
+    margin-top: 1vh;
 }
 
   

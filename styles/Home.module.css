@@ -13,12 +13,13 @@
 
 .luz:hover{
   opacity: 50%;
+  cursor: pointer;
 }
 
 .chroma{
-  font-size: 1.0em;
+  font-size: 1.3em;
+  margin-bottom: 1vh;
   text-decoration: none;
-  margin: 0.5em; 
 }
 
 .content{
@@ -66,6 +67,7 @@
 
 .checkbox{
   position: relative;
+  margin-top: 1vh;
   margin-bottom: 1vh;
   width: 60px;
   height: 30px;
