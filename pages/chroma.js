@@ -33,7 +33,7 @@ export default function chroma(){
       <div className={styles.bgGradiente}>
         <div className={styles.controles}>
           <Link href="/"><p className={styles.chroma}>Home page</p></Link>
-          <iframe className={styles.lofi} src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1&rel=0" frameBorder="0"></iframe>
+          <iframe className={styles.lofi} src="https://www.youtube.com/embed/ff5lO8TkVX8?autoplay=1&rel=0" frameBorder="0"></iframe>
         </div>
         <div className={styles.clock}>
           <h1>Lofi Clock</h1>
